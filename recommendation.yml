@@ -1,8 +1,0 @@
-
-server:
-  port: 1212
-
-eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
