@@ -1,0 +1,16 @@
+spring:
+  profiles: docker
+  data:
+    mongodb:
+      host: mongo-document
+      port: 27017
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
