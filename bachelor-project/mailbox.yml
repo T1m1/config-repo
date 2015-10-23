@@ -1,9 +1,15 @@
 spring:
   application:
-    name: edgeserver
+    name: mailbox-service  
 
-info:
-  component: Zuul Server
-  
 server:
-  port: 1111
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
