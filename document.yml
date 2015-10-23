@@ -1,9 +1,9 @@
 spring:
   application:
-    name: document-service-github
+    name: document-service
 
 server:
-  port: 0
+  port: 12345
 
 spring:
   data:
