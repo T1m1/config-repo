@@ -1,11 +1,10 @@
 spring:
-  application:
-    name: document-service
+  applicationname: document
 
 server:
-  port: 12345
+  port: 0
 
-spring:
+  spring:
   data:
     mongodb:
       host: localhost
