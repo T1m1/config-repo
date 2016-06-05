@@ -1,2 +1,5 @@
 server:
   port: 4321
+
+bar: Updated!
+foo: Added!
