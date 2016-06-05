@@ -1,0 +1,5 @@
+server:
+  port: 33333
+
+bar: Test!
+foo: blub!
